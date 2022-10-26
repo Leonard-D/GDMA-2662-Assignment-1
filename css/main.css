@@ -34,17 +34,40 @@
         -webkit-box-sizing: border-box;
         -ms-box-sizing: border-box;
         box-sizing: border-box;
-        line-height: normal;
 }
 /*--------------------------------------------------------------
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
+/* ----- TYPOGRAPHY ----- */
+#hero > div > div {
+        text-align: center;
+        font-family:'Source Sans Pro', sans-serif;
+        text-transform: uppercase;
+        color:#fff;
+        margin-top: 175px;
+}
+div > h1 {
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0 auto;
+}
+div > h1 ~ p {
+        font-size: 30px;
+        font-weight: 300;
+        margin: 0 auto;
 
+}
 
-
-
-
-
+/* ----- IMAGES ----- */
+header > div > div > img {
+        position: absolute;
+        width: 175px;
+}
+#hero {
+        background: url(../img/computer-hero.jpg) no-repeat 0px;
+        background-size: cover;
+        padding: 50px;
+}
 /*--------------------------------------------------------------
     5.0 - OBJECTS
 -------------------------------------------------------------- */
@@ -55,12 +78,59 @@
         margin: 0 auto;
 }
 
-
 /*--------------------------------------------------------------
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
+/* ----- NAVIGATION ----- */
+header > div {
+        padding: 50px 70px 0px 70px;
+}
+header > div > nav,
+header > div > p {
+       display: flex;
+       justify-content: end;
+}
+header > div > p {
+        margin: 0px 0px 50px 0px;
+}
+header > div > nav > ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px 0px 14px 0px;
+}
 
+header > div > nav li {
+        display: inline-block;
+}
 
+header > div > nav li > a {
+        font: 16px 'Lato', sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #FE8360;
+        padding: 15px 20px;
+        margin-right: -4px;
+        transition: 1s;
+}
+header > div > nav li > a:hover {
+        background-color: #51CCF8;
+        opacity: 1;
+}
+
+/* ----- RELATED ARTICLES ----- */
+
+#benefits {
+        background: #51CCF8;
+        background-size: cover;
+        padding: 50px;
+}
+#hosting {
+        background: #FE8360;
+        background-size: cover;
+        padding: 50px;
+}
 /*--------------------------------------------------------------
     7.0 - UTILITIES
 -------------------------------------------------------------- */
