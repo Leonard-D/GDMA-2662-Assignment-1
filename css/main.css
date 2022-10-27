@@ -58,6 +58,10 @@ div > h1 ~ p {
         margin: 0 auto;
 
 }
+#optimized {
+        width: 640px;
+        
+}
 #optimized > header {
         text-transform: uppercase;
         margin: 100px 0px 0px 0px;
@@ -80,6 +84,9 @@ div > h1 ~ p {
         font-size: 16px;
         line-height: 24.91px;
         color: #000;
+}
+#optimized > ul {
+        padding: 0px 0px 30px 20px;
 }
 i {
         font-size: 50px;
@@ -105,7 +112,6 @@ header > div > div > img {
         width: 1024px;
         margin: 0 auto;
 }
-
 /*--------------------------------------------------------------
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
@@ -168,9 +174,11 @@ header > div > nav li > a:hover {
 footer {
         background-color: #4D515C;
         background-size: cover;
+        padding: 30px;
 }
 footer > div > div {
         display: inline-block;
+        padding: 0px 100px 0px 0px;
 }
 footer > div > div > h4 {
         font-size: 18px;
@@ -178,16 +186,82 @@ footer > div > div > h4 {
         text-transform: uppercase;
         color: #fff;
         line-height: 22.63px;
+        margin: 0 auto;
 }
-footer > div > div, ul {
+footer > div > div > nav > ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0 auto;
+}
+footer > div > div > nav li > a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21.8px;
+        text-decoration: none;
+        color: #B6BCC7;
+}
+footer > div > div > nav li > a:hover {
+        color: #fff;
+}
+footer > div > div:nth-child(2) > ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0 auto;
+}
+footer > div > div:nth-child(2) > ul > li{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21.8px;
+        color: #fff;
+}
+footer > div > div:nth-child(2) > ul > li > a{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21.8px;
+        text-decoration: none;
+        color: #B6BCC7;
+}
+footer > div > div:nth-child(2) > ul > li > a:hover{
+        color: #fff;
+}
+footer > div > div:nth-child(3){
+       position: absolute;
+}
+footer > div > div:nth-child(3) > ul{
         list-style-type: none;
+        padding: 0px;
+        margin: 0 auto;
+}
+footer > div > div:nth-child(3) > ul > li{
+        display: inline-block;
+}
+footer > div > div:nth-child(3) > ul > li > a{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21.8px;
+        text-decoration: none;
+        color: #B6BCC7;
+        margin-right: 20px;
+}
+footer > div > div:nth-child(3) > ul > li > a:hover{
+        color: #fff;
 }
 /* ----- RELATED ARTICLES ----- */
 .flexbox {
         display: flex;
+        margin: 0 auto;
 }
 .flexbox > section {
-        display: flex;   
+        display: flex;
+        width: 310px;
+        padding: 100px 0px 0px 0px; 
+        margin: 0 auto;  
+}
+.flexbox > section > i {
+        padding: 20px 30px 0px 0px;   
+}
+.flexbox > i {
+        padding: 130px 30px 0px 0px;   
 }
 .flexbox > section > header > h3 {
         font-size: 18px;
@@ -202,15 +276,48 @@ footer > div > div, ul {
         color: #3F3C45;
         line-height: 24.91px;
 }
+/* ----- BENEFITS ----- */
 #benefits {
         background: #51CCF8;
         background-size: cover;
         padding: 50px;
 }
+#benefits > div > div {
+        color : #fff;
+}
+#benefits > div > div > p {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 37.71px;
+        text-transform: uppercase;
+        margin: 0 auto;
+}
+#benefits > div > div > h1 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 62.85px;
+        text-transform: uppercase;
+}
 #hosting {
         background: #FE8360;
         background-size: cover;
         padding: 50px;
+}
+#hosting > div > div {
+        color : #fff;
+}
+#hosting > div > div > p {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 37.71px;
+        text-transform: uppercase;
+        margin: 0 auto;
+}
+#hosting > div > div > h2 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 62.85px;
+        text-transform: uppercase;
 }
 /*--------------------------------------------------------------
     7.0 - UTILITIES
