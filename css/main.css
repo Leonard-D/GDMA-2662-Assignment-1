@@ -18,6 +18,7 @@
         - Navigation 
         - Related Articles
         -Button
+        -Footer
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
         - Screen Reader	
         -Color    
@@ -57,7 +58,34 @@ div > h1 ~ p {
         margin: 0 auto;
 
 }
-
+#optimized > header {
+        text-transform: uppercase;
+        margin: 100px 0px 0px 0px;
+        color: #3F3C45;
+}
+#optimized > header > p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 22.63px;
+        margin: 0 auto;
+}
+#optimized > header > h2 {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 44px;
+        margin: 0 auto;
+}
+#optimized > p,
+#optimized > ul {
+        font-size: 16px;
+        line-height: 24.91px;
+        color: #000;
+}
+i {
+        font-size: 50px;
+        font-weight: 900;
+        color: #FE8360;
+}
 /* ----- IMAGES ----- */
 header > div > div > img {
         position: absolute;
@@ -119,8 +147,61 @@ header > div > nav li > a:hover {
         opacity: 1;
 }
 
-/* ----- RELATED ARTICLES ----- */
+/* ----- BUTTON----- */
 
+.button > p > a {
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #FE8360;
+        padding: 15px 20px;
+        transition: 1s;
+}
+.button > p > a:hover {
+        background-color: #51CCF8;
+        opacity: 1;
+}
+
+/* ----- FOOTER----- */
+footer {
+        background-color: #4D515C;
+        background-size: cover;
+}
+footer > div > div {
+        display: inline-block;
+}
+footer > div > div > h4 {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 22.63px;
+}
+footer > div > div, ul {
+        list-style-type: none;
+}
+/* ----- RELATED ARTICLES ----- */
+.flexbox {
+        display: flex;
+}
+.flexbox > section {
+        display: flex;   
+}
+.flexbox > section > header > h3 {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #3F3C45;
+        line-height: 22.63px;
+}
+.flexbox > section > header > p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #3F3C45;
+        line-height: 24.91px;
+}
 #benefits {
         background: #51CCF8;
         background-size: cover;
