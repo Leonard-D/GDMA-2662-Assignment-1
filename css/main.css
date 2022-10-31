@@ -93,8 +93,42 @@ i {
         font-weight: 900;
         color: #FE8360;
 }
+#form > div > header > i{
+        font-size: 20px;
+        line-height: 20px;
+}
+#form > div > header > p{
+        font-size: 18px;
+        font-weight: 300;
+        color: #3F3C45;
+        line-height: 23px;
+        text-transform: uppercase;
+        margin: 0 auto;
+}
+#form > div > header > h2{
+        font-size: 35px;
+        font-weight: 700;
+        color: #3F3C45;
+        line-height: 44px;
+        text-transform: uppercase;
+        margin: 0 auto;
+}
+b {
+        font-weight: 700;
+        color:#3F3C45;
+}
+header > div > p > span {
+        transition: 1s;
+}
+header > div > p > span:hover {
+        color:#FE8360;
+        opacity: 1;
+}
+thead > tr:first-child > th > span {
+        font-weight: 700;
+}
 /* ----- IMAGES ----- */
-header > div > div > img {
+header > div > div > a > img {
         position: absolute;
         width: 175px;
 }
@@ -162,14 +196,27 @@ header > div > nav li > a:hover {
         text-transform: uppercase;
         color: #fff;
         background-color: #FE8360;
-        padding: 15px 20px;
+        padding: 15px 40px;
         transition: 1s;
 }
 .button > p > a:hover {
         background-color: #51CCF8;
         opacity: 1;
 }
-
+#form > div > div > p > a {
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #FE8360;
+        padding: 15px 80px;
+        transition: 1s;
+}
+#form > div > div > p > a:hover {
+        background-color: #51CCF8;
+        opacity: 1;
+}
 /* ----- FOOTER----- */
 footer {
         background-color: #4D515C;
@@ -247,30 +294,30 @@ footer > div > div:nth-child(3) > ul > li > a:hover{
         color: #fff;
 }
 /* ----- RELATED ARTICLES ----- */
-.flexbox {
+.row {
         display: flex;
         margin: 0 auto;
 }
-.flexbox > section {
+.row > section {
         display: flex;
         width: 310px;
         padding: 100px 0px 0px 0px; 
         margin: 0 auto;  
 }
-.flexbox > section > i {
+.row > section > i {
         padding: 20px 30px 0px 0px;   
 }
-.flexbox > i {
+.row > i {
         padding: 130px 30px 0px 0px;   
 }
-.flexbox > section > header > h3 {
+.row > section > header > h3 {
         font-size: 18px;
         font-weight: 700;
         text-transform: uppercase;
         color: #3F3C45;
         line-height: 22.63px;
 }
-.flexbox > section > header > p {
+.row > section > header > p {
         font-size: 16px;
         font-weight: 400;
         color: #3F3C45;
@@ -318,6 +365,132 @@ footer > div > div:nth-child(3) > ul > li > a:hover{
         font-weight: 700;
         line-height: 62.85px;
         text-transform: uppercase;
+}
+#form {
+        background: #E7F5F8;
+        background-size: cover;
+}
+form > div > label > input {
+        width: 420px;
+        background-color: #fff;
+        border: 1px solid #3F3C45;
+}
+form > div > label > input:focus {
+        outline: none;
+        border: 1px solid #FE8360;
+}
+form > div > select {
+        width: 200px;
+        background-color: #fff;
+        border: 1px solid #3F3C45;
+}
+form > div > select:focus {
+        outline: none;
+        border: 1px solid #FE8360;
+}
+table {
+        border-collapse: collapse;
+}
+thead {
+        border: 1px solid #E0DFE1;
+        padding: 100px 0px 0px 0px;
+}
+thead > tr:first-child > th {
+        font-size: 75px;
+        font-weight: 200;
+        line-height: 94px;
+        color: #3F3C45;
+}
+thead > tr:nth-child(2) > td {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 31.43px;
+        color: #3F3C45;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0px 0px 15px 0px;
+}
+thead > tr:nth-child(3) > td > a {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.11px;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: #51CCF8;
+        padding: 10px 50px;
+        margin: 0px 0px 0px 30px;
+}
+thead > tr:first-child > th:first-child,
+thead > tr:nth-child(2) > td:first-child,
+thead > tr:nth-child(3) > td:first-child, 
+thead > tr:nth-child(4) > td:first-child,
+thead > tr:first-child > th:nth-child(2),
+thead > tr:nth-child(2) > td:nth-child(2),
+thead > tr:nth-child(3) > td:nth-child(2), 
+thead > tr:nth-child(4) > td:nth-child(2),
+thead > tr:first-child > th:nth-child(3),
+thead > tr:nth-child(2) > td:nth-child(3),
+thead > tr:nth-child(3) > td:nth-child(3), 
+thead > tr:nth-child(4) > td:nth-child(3),
+thead > tr:first-child > th:nth-child(4),
+thead > tr:nth-child(2) > td:nth-child(4),
+thead > tr:nth-child(3) > td:nth-child(4), 
+thead > tr:nth-child(4) > td:nth-child(4){
+        border-right: 1px solid #E0DFE1;
+}
+thead > tr:nth-child(4) > td {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24.91px;
+        color: #3F3C45;
+        text-align: center;
+        padding: 50px 0px 0px 0px;
+}
+tbody {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24.91px;
+        color: #3F3C45;
+        text-align: center;  
+}
+tbody > tr:first-child > td:first-child,
+tbody > tr:first-child > td:nth-child(2),
+tbody > tr:first-child > td:nth-child(3),
+tbody > tr:first-child > td:nth-child(4),
+tbody > tr:nth-child(2) > td:first-child,
+tbody > tr:nth-child(2) > td:nth-child(2),
+tbody > tr:nth-child(2) > td:nth-child(3),
+tbody > tr:nth-child(2) > td:nth-child(4),
+tbody > tr:nth-child(3) > td:first-child,
+tbody > tr:nth-child(3) > td:nth-child(2),
+tbody > tr:nth-child(3) > td:nth-child(3),
+tbody > tr:nth-child(3) > td:nth-child(4) {
+        border: 1px solid #E0DFE1;
+}
+tbody > tr:nth-child(4) > td {
+        border: 1px solid #E0DFE1;
+        border-bottom: none;
+}
+tbody > tr:nth-child(5) > td {
+        border: 1px solid #E0DFE1;
+        border-top: none;
+        padding: 30px;
+}
+tbody > tr:nth-child(5) > td > a {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.11px;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: #FE8360;
+        padding: 10px 50px;
+        transition: 1s;
+}
+tbody > tr:nth-child(5) > td > a:hover {
+        background-color: #51CCF8;
+        opacity: 1;
 }
 /*--------------------------------------------------------------
     7.0 - UTILITIES
