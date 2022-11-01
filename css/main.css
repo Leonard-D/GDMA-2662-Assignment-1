@@ -47,45 +47,49 @@
         color:#fff;
         margin-top: 175px;
 }
-div > h1 {
+div > p:first-child {
         font-size: 50px;
         font-weight: 700;
         margin: 0 auto;
 }
-div > h1 ~ p {
+div > p:last-child {
         font-size: 30px;
         font-weight: 300;
         margin: 0 auto;
 
 }
-#optimized {
-        width: 640px;
-        
+h1 {
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0 auto; 
 }
-#optimized > header {
+#index-main {
+        width: 640px;
+        padding-top: 100px;
+}
+#index-main > header {
         text-transform: uppercase;
-        margin: 100px 0px 0px 0px;
         color: #3F3C45;
 }
-#optimized > header > p {
+#index-main > header > p {
         font-size: 18px;
         font-weight: 300;
         line-height: 22.63px;
         margin: 0 auto;
 }
-#optimized > header > h2 {
+#index-main > header > h2 {
         font-size: 35px;
         font-weight: 700;
         line-height: 44px;
         margin: 0 auto;
 }
-#optimized > p,
-#optimized > ul {
+#index-main > p,
+#index-main > ul {
         font-size: 16px;
         line-height: 24.91px;
         color: #000;
 }
-#optimized > ul {
+#index-main > ul {
         padding: 0px 0px 30px 20px;
 }
 i {
@@ -120,6 +124,15 @@ b {
 header > div > p > span {
         transition: 1s;
 }
+header > div > p > a {
+        text-decoration: none;
+        color:#3F3C45;
+        transition: 1s;
+}
+header > div > p > a:hover {
+        color:#FE8360;
+        opacity: 1;
+}
 header > div > p > span:hover {
         color:#FE8360;
         opacity: 1;
@@ -128,7 +141,7 @@ thead > tr:first-child > th > span {
         font-weight: 700;
 }
 /* ----- IMAGES ----- */
-header > div > div > a > img {
+header > div > div > h1 > a > img {
         position: absolute;
         width: 175px;
 }
@@ -203,7 +216,7 @@ header > div > nav li > a:hover {
         background-color: #51CCF8;
         opacity: 1;
 }
-#form > div > div > p > a {
+form  p > a {
         font-size: 16px;
         font-weight: 700;
         text-decoration: none;
@@ -213,7 +226,7 @@ header > div > nav li > a:hover {
         padding: 15px 80px;
         transition: 1s;
 }
-#form > div > div > p > a:hover {
+form > p > a:hover {
         background-color: #51CCF8;
         opacity: 1;
 }
@@ -296,7 +309,13 @@ footer > div > div:nth-child(3) > ul > li > a:hover{
 /* ----- RELATED ARTICLES ----- */
 .row {
         display: flex;
-        margin: 0 auto;
+        justify-content: space-between;
+}
+#form > .row > header {
+        width: 120px;
+}
+#form > .row > form {
+        width: 850px;
 }
 .row > section {
         display: flex;
@@ -322,6 +341,20 @@ footer > div > div:nth-child(3) > ul > li > a:hover{
         font-weight: 400;
         color: #3F3C45;
         line-height: 24.91px;
+}
+.row > div:last-child {
+        background: url(../img/woman.jpg) no-repeat 0px;
+        width: 400px;
+        margin-top: 100px;
+        background-size: contain;
+        position: relative;
+        top: 0;
+        left: 0;
+}
+.row > div:last-child > i {
+        position: absolute;
+        top: -20px;
+        left: -25px;
 }
 /* ----- BENEFITS ----- */
 #benefits {
@@ -369,6 +402,8 @@ footer > div > div:nth-child(3) > ul > li > a:hover{
 #form {
         background: #E7F5F8;
         background-size: cover;
+        padding: 30px;
+        margin-bottom: 30px;
 }
 form > div > label > input {
         width: 420px;
@@ -387,6 +422,9 @@ form > div > select {
 form > div > select:focus {
         outline: none;
         border: 1px solid #FE8360;
+}
+form > p > a {
+        position: absolute;
 }
 table {
         border-collapse: collapse;
@@ -452,7 +490,7 @@ tbody {
         font-weight: 400;
         line-height: 24.91px;
         color: #3F3C45;
-        text-align: center;  
+        text-align: center; 
 }
 tbody > tr:first-child > td:first-child,
 tbody > tr:first-child > td:nth-child(2),
