@@ -65,7 +65,7 @@ h1 {
 }
 #index-main {
         width: 640px;
-        padding-top: 100px;
+        padding: 100px 0px 0px 0px;
 }
 #index-main > header {
         text-transform: uppercase;
@@ -316,6 +316,7 @@ footer > div > div:nth-child(3) > ul > li > a:hover{
 }
 #form > .row > form {
         width: 850px;
+        align-items: center;
 }
 .row > section {
         display: flex;
@@ -345,7 +346,7 @@ footer > div > div:nth-child(3) > ul > li > a:hover{
 .row > div:last-child {
         background: url(../img/woman.jpg) no-repeat 0px;
         width: 400px;
-        margin-top: 100px;
+        margin: 100px 0px 0px 30px;
         background-size: contain;
         position: relative;
         top: 0;
@@ -405,26 +406,22 @@ footer > div > div:nth-child(3) > ul > li > a:hover{
         padding: 30px;
         margin-bottom: 30px;
 }
-form > div > label > input {
+form > label > input {
         width: 420px;
         background-color: #fff;
         border: 1px solid #3F3C45;
 }
-form > div > label > input:focus {
+form > label > input:focus {
         outline: none;
         border: 1px solid #FE8360;
 }
-form > div > select {
-        width: 200px;
+form > select {
         background-color: #fff;
         border: 1px solid #3F3C45;
 }
-form > div > select:focus {
+form > select:focus {
         outline: none;
         border: 1px solid #FE8360;
-}
-form > p > a {
-        position: absolute;
 }
 table {
         border-collapse: collapse;
